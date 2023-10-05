@@ -1,0 +1,16 @@
+<!-- weather-display.component.html -->
+<h1>Meteo App 🌦️🌡️</h1>
+<div class="bigSearch">
+  <input
+    #cityInput
+    type="text"
+    (keyup.enter)="searchWeatherForCity(cityInput.value)"
+    placeholder="Enter city name"
+  />
+  <button (click)="searchWeatherForCity(cityInput.value)">Cerca 🔍</button>
+  <div *ngIf="weatherData">
+    <h2>{{ weatherData.name }}</h2>
+    <p>Temperatura: {{ weatherData.main.temp }}*C</p>
+    <p>Meteo: {{ weatherData.weather[0].description }}</p>
+  </div>
+</div>
