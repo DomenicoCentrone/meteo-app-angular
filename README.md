@@ -1,6 +1,6 @@
-# WeatherApp
+# Meteo App Angular 🌦️🌡️
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+Una semplice applicazione Angular per visualizzare le previsioni del tempo per una determinata città. L'utente può inserire il nome di una città e ottenere le attuali condizioni meteorologiche.
 
 ## Development server
 
